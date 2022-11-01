@@ -25,3 +25,8 @@ int main()
 
     return 0;
 }
+
+/*Enter the number : 
+1234
+Reverse number is : 4321
+Reverse Number is greater that original number.*/
