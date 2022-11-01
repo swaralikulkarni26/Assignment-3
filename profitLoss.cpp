@@ -24,3 +24,9 @@ int main(){
 
         return 0;
 }
+
+/*Enter Cost price : 
+150
+Enter Seling price : 
+200
+profit is : 50*/
