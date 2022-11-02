@@ -18,6 +18,13 @@ int main()
             num = num / 10;
         }
         cout<<"Reverse number is : "<<rev_num<<endl;
+        if(rev_num>num){
+            cout<<"Reversd Number is greater than original number."<<endl;
+        }
+        else if(rev_num<num){
+            cout<<"Reversd Number is less than original number."<<endl;
+        }
+        else cout<<"Both are equal"<<endl;  
     }
     else{
         cout<<"Enter the 5 Digits number only."<<endl;
