@@ -16,7 +16,7 @@ int main(){
         cout<<"Profit is : "<<profit<<endl;
     }
     else if(sp<cp){
-        loss=cp-sp
+        loss=cp-sp;
         cout<<"Loss is : "<<loss<<endl;
     }
     else 

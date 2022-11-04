@@ -3,10 +3,11 @@
 // in increasing order of their area and print all the data of each circle.
 #include <iostream>
 #include <vector>
+#include<map>
 using namespace std;
-void AcceptData(vector<double> &v)
+void AcceptData(map<double, int> &m)
 {
-    int noOfcircle;
+    int noOfcircle, x;
     cout << "Enter no of circle: " << endl;
     cin >> noOfcircle;
     double r;
@@ -14,34 +15,36 @@ void AcceptData(vector<double> &v)
     {
         cout << "Enter radius of " << i << " circle :" << endl;
         cin >> r;
-        v.push_back(r);
+        cout<<"Enter x co-ordinate: "<<i<<" circle :"<<endl;
+        cin>>x;
+        m.insert(pair<double, int>(r,x));
     }
 }
 
-void calculateArea(const vector<double> &v, vector<double> &area)
+void calculateArea(const map<double, int > &v, vector<double> &area)
 {
 
     for (auto i : v)
     {
-        cout<<i<<" ";
-        area.push_back(3.14 * i * i);
+        area.push_back(3.14 *i.first * i.first);
     }
 }
-    void diplayArea(vector<double> & area)
+    void displayArea(vector<double> & area)
     {
         for (auto i : area)
         {
-            cout << area[i] << " " << endl;
+            cout << "Area of circle is :"<<i << " " << endl;
         }
+
     }
     int main()
     {
-        vector<double> v;
+        map<double,int>  v;
         vector<double> area;
         //int noOfCircles = 0;
        // cout << "Enter No of circles:" << endl;
         AcceptData(v);
         calculateArea(v, area);
-        diplayArea(area);
+        displayArea(area);
         return 0;
     }
