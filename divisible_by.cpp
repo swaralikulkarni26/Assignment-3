@@ -35,18 +35,19 @@ void DivisibleBy(const vector<int> & l1, const int & d, vector<int> &l2)
 void Display(const vector<int> & l1, const vector<int>&l2, const int & d) {
     cout<<"l1 : (";
     for(auto iter : l1) {
-        cout<<iter<<", ";
+        cout<<iter<<" ";
     }
     cout<<")"<<endl;
-    cout<<"N:"<<l1.size()<<endl;
+    cout<<"size of l1: "<<l1.size()<<endl;
    cout<<"--------------------------------------------------"<<endl;
+   cout<<"Diviser D: "<<d<<endl; 
+
     cout<<"l2 : (";
     for(auto iter : l2) {
-        cout<<iter<<", ";
+        cout<<iter<<" ";
     }
     cout<<")"<<endl;
-    cout<<"N"<<l2.size()<<endl;
-    cout<<"Diviser D: "<<d<<endl; 
+    cout<<"size of l1: "<<l2.size()<<endl;
 }
 	
 int main() 

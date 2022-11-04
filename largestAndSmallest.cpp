@@ -4,7 +4,8 @@
 using namespace std;
 int main()
 {
-    int arr[10],min, max;
+    int arr[10],min, max, indexmax, indexmin;
+    
     cout<<"Enter the Numbers "<<endl;
    // cin>>n;
     for(int i=0;i<10;i++){
@@ -18,9 +19,11 @@ int main()
          if(max<arr[i])
         {
         max=arr[i];
+        indexmax=i;
         }
       }
  cout<<"Maximum number in list : "<<max<<endl;
+ cout<<"Maximum Number index is : "<<indexmax<<endl;
  min=arr[0];
         
       for( int i=1;i<10;i++)
@@ -28,11 +31,10 @@ int main()
          if(min>arr[i])
         {
         min=arr[i];
+        indexmin=i;
         }
       }
   cout<<"Minimum number in list : "<<min<<endl;
-
-
-
+   cout<<"Minimum Number index is : "<<indexmin<<endl;
     return 0;
 }
